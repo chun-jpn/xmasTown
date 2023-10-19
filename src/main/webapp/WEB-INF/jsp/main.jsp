@@ -19,7 +19,7 @@ Function:taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
 <title>どこつぶ</title>
 </head>
 <body>
-<h1>どこつぶメイン</h1>
+<h1>どこつぶ</h1>
 <p>
 <c:out value="${loginUser.name}" />さん、ロングイン中
 <a href="Logout">ログアウト</a>
@@ -32,13 +32,13 @@ Function:taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
 
 <!-- if文 -->
 <c:if test="${not empty errorMsg }">
-	<p><c:out value="${errorMsg}" /></p>
+    <p><c:out value="${errorMsg}" /></p>
 </c:if>
 
 <!-- for文 -->
 <c:forEach var="mutter" items="${mutterList}">
-	<p><c:out value="${mutter.userName}" />:
-		<c:out value="${mutter.text}" /></p>
+    <p><c:out value="${mutter.userName}" />:
+        <c:out value="${mutter.text}" /></p>
 </c:forEach>
 
 <!-- これまでのjavaとは書き方が全く違う -->
